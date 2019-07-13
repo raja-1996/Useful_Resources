@@ -1,2 +1,70 @@
-Docker installation
+# Docker installation
 https://www.thegeekdiary.com/how-to-install-docker-on-mac/
+
+# Example of dockerizing python app
+https://www.wintellect.com/containerize-python-app-5-minutes/
+
+# Create Dockerfile in python project
+
+Examples Dockerfile
+
+FROM python:alpine3.6
+COPY . /app
+WORKDIR /app
+RUN pip install -r requirements.txt
+EXPOSE 5000
+CMD python index.py
+
+
+# Build Docker
+docker build --tag myappimage
+
+# Create and run container
+docker run -d --name myappcontainer -p 5001:5000 myappimage
+
+# Stop Container
+docker stop myappcontainer
+
+# Kill Container (Prefer stop)
+docker kill myappcontainer
+
+# Start Container
+docker start myappcontainer
+
+# see status of all docker containers (running/stopped)
+docker ps -a
+
+# List all the docker Images
+docker images
+
+
+# Pause Container
+docker pause myappcontainer
+
+# Unpause Container
+docker unpause myappcontainer
+
+# Restart container
+docker restart myappcontainer
+
+# Stop all runnning container
+docker stop $(docker ps -q)
+
+# Remove all containers
+docker rm $(docker ps -aq)
+
+# Remove all images
+docker rmi $(docker images -aq)
+
+
+# Save docker image in file
+docker save -o myappimage.tar myappimage
+
+# Loading docker image
+docker load -i myappimage.tar
+
+
+
+
+
+
