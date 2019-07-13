@@ -64,6 +64,15 @@ docker save -o myappimage.tar myappimage
 docker load -i myappimage.tar
 
 
+# Create .dockerignore
+# This will ignore all the files specified while building docker image
+.git
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+
 
 
 
