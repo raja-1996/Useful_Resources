@@ -1,0 +1,7 @@
+https://www.digitalocean.com/community/tutorials/an-introduction-to-kubernetes
+https://www.edureka.co/blog/interview-questions/kubernetes-interview-questions/
+
+https://auth0.com/blog/kubernetes-tutorial-step-by-step-introduction-to-basic-concepts/
+https://www.freecodecamp.org/news/learn-kubernetes-in-under-3-hours-a-detailed-guide-to-orchestrating-containers-114ff420e882/
+
+https://kubernetes.io/docs/tutorials/
