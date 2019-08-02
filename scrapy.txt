@@ -1,0 +1,12 @@
+https://www.youtube.com/watch?v=ve_0h4Y8nuI&list=PLhTjy8cBISEqkN-5Ku_kXG4QW33sxQo0t
+
+https://www.analyticsvidhya.com/blog/2017/07/web-scraping-in-python-using-scrapy/
+
+custom_settings = {
+        'FEED_URI' : 'tmp/techcrunch.csv'
+    }
+    
+    
+ https://www.data-blogger.com/2016/08/18/scraping-a-website-with-python-scrapy/
+ 
+ https://docs.scrapy.org/en/latest/topics/spiders.html
