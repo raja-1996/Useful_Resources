@@ -3,10 +3,12 @@ https://www.youtube.com/watch?v=ve_0h4Y8nuI&list=PLhTjy8cBISEqkN-5Ku_kXG4QW33sxQ
 https://www.analyticsvidhya.com/blog/2017/07/web-scraping-in-python-using-scrapy/
     
  
- # Getting started
- https://python.gotrained.com/scrapy-tutorial-web-scraping-craigslist/
- https://www.data-blogger.com/2016/08/18/scraping-a-website-with-python-scrapy/
+# Getting started
+https://python.gotrained.com/scrapy-tutorial-web-scraping-craigslist/
+https://www.data-blogger.com/2016/08/18/scraping-a-website-with-python-scrapy/
  
- # Different types of spiders
- https://docs.scrapy.org/en/latest/topics/spiders.html
+# Different types of spiders
+https://docs.scrapy.org/en/latest/topics/spiders.html
 
+
+scrapy crawl money -o money.csv --nolog
