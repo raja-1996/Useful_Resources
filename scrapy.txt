@@ -11,4 +11,12 @@ https://www.data-blogger.com/2016/08/18/scraping-a-website-with-python-scrapy/
 https://docs.scrapy.org/en/latest/topics/spiders.html
 
 
+pip install scrapy
+
+scrapy startproject project_name
+scrapy genspider jobs https://newyork.craigslist.org/search/egr
+
 scrapy crawl money -o money.csv --nolog
+scrapy crawl news --nolog --set JOBDIR=news_dir
+
+scrapy shell https://www.moneycontrol.com/news/
