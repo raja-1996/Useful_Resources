@@ -1,0 +1,82 @@
+import plotly.offline as py
+py.init_notebook_mode(connected=True)
+
+import plotly.graph_objs as go
+import plotly.figure_factory as ff
+import pandas as pd
+
+
+
+
+# Histogram 
+x = data
+fig = go.Figure(data=[go.Histogram(x=x)])
+fig.show()
+
+
+
+
+# Bar Plot
+
+data = [{'x': 1, 'y':2}]
+bars = [ go.Bar(name=pol, 
+                x=item["x"], 
+                y=item['y'],
+                text=item['y'],
+                textposition='auto',) for item in data]
+fig = go.Figure(data=bars)
+
+fig.update_layout(barmode='stack', title_text='Bar Plot')
+fig.show()
+
+
+
+
+
+# Box Plot
+data = [[0.3,0.5,0.7]]
+
+fig = go.Figure()
+
+boxes = [go.Box(name="name_of_box", y=item, boxpoints=False,) for item in data]
+fig = go.Figure(data=boxes)
+
+fig.update_layout(title_text='Violin Plot', height=1000)
+fig.show()
+
+
+
+
+
+# Violin Plot
+data = [[0.3,0.5,0.7]]
+
+fig = go.Figure()
+
+violins = [go.Violin(name='name_of_box', y=item) for item in data]
+fig = go.Figure(data=violins)
+
+fig.update_layout(title_text='Violin Plot', height=1000)
+fig.show()
+
+
+
+
+
+
+
+
+
+# KDE Plot
+
+fig = go.Figure()
+hist_data = [[0.3,0.4,0.5], [0.4,0.9,0.1]]
+group_labels = ['plot1', 'plot2'] 
+
+fig = ff.create_distplot(hist_data, group_labels, show_hist=False, show_rug=False)
+fig.show()
+
+
+
+
+
