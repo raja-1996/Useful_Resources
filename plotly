@@ -78,5 +78,36 @@ fig.show()
 
 
 
+# Line Plot
 
+fig = go.Figure()
+trace1 = go.Scatter(
+                    x = x,
+                    y = y,
+                    mode = "lines",
+                    name = "trace1",
+                    marker = dict(color = 'rgba(16, 112, 2, 0.8)'),
+                    text= labels)
+
+fig = go.Figure(data=[trace1])
+
+fig.update_layout(title_text='Scatter Plot')
+fig.show()
+
+
+# Scatter Plot
+
+fig = go.Figure()
+trace1 = go.Scatter(
+                    x = x,
+                    y = y,
+                    mode = "markers",
+                    name = "trace1",
+                    marker = dict(color = 'rgba(16, 112, 2, 0.8)'),
+                    text= labels)
+
+fig = go.Figure(data=[trace1])
+
+fig.update_layout(title_text='Scatter Plot')
+fig.show()
 
